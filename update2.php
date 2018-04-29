@@ -7,6 +7,8 @@ if ($conn->query($sql) === TRUE) {
     echo "<center><h2>Great! We have confirmed that the car is sold now.</h2></center>";
 	echo "<br><br><br>";
 	echo "<center><a href = 'inventory.php'> <h3>My Updated Inventory </h3></a></center>";
+	echo "<br>";
+	echo "<center><a href = 'index.php'> <h4>Add New Car </h4></a></center>";
 } else {
     echo "Error deleting record: " . $conn->error;
 }
